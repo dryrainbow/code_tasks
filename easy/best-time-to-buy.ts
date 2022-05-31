@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-// too slow
+
 function maxProfit(prices: number[]): number {
     let sum = 0;
     let max = 0;
