@@ -3,6 +3,8 @@
 /** 
  * O(n * k)
  * I think it can be faster
+ * 
+ * Memory O(n) (because result needs same memory as strs)
 */
 function groupAnagrams(strs) {
     const result = [];
