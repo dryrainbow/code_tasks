@@ -23,6 +23,17 @@ function reverseReq(reversedList, head) {
     return reverseReq(head, tmp)
 }
 
+var reverseListInPlace = function(head) {
+    if (!head || !head.next) {
+        return head
+    }
+    let lastEl = reverseListInPlace(head.next)
+    head.next.next = head;
+    head.next = null;
+
+    return reverseListInPlace
+};
+
 
 let node1 = new ListNode(1)
 console.assert(reverseList(node1).val === 1)
