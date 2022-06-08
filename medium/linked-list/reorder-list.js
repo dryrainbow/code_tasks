@@ -2,7 +2,7 @@
 
 // It is working but too slow!
 // O(n)
-// O(n)
+// O(1)
 function ListNode(val, next) {
     this.val = (val===undefined ? 0 : val)
     this.next = (next===undefined ? null : next)
