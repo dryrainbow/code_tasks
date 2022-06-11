@@ -20,18 +20,19 @@ function generateParenthesis(n) {
 }
 
 function isValidParenthesis(parenthesis) {
-    let stack = []
+    let counter = 0
     for (let i = 0; i < parenthesis.length; i ++) {
         let ch = parenthesis[i]
         if (ch === '(') {
-            stack.push(ch)
+            counter ++;
         } else {
-            if (stack.pop() ==='(') {
-                continue
+            if (counter > 0) {
+                counter --;
+            } else {
+                return false;
             }
-            return false;
         }
     }
-    return stack.length === 0;
+    return counter === 0;
 }
 console.log(generateParenthesis(2))
