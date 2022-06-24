@@ -6,12 +6,11 @@
  */
  var lengthOfLastWord = function(s) {
     let lastLength = 0;
-    let curLength = 0;
-    for (let i = 0; i < s.length; i++) {
+    for (let i = s.length - 1; i >= 0; i--) {
         if (s[i] != ' ') {
-            curLength += 1
-            lastLength = curLength
+            lastLength += 1
         } else{
+            if (lastLength !== 0) return lastLength;
             curLength = 0
         }
     }
