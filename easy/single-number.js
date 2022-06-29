@@ -6,14 +6,11 @@
  * @return {number}
  */
  var singleNumber = function(nums) {
-    let store = {}
-
-    nums.forEach((el)=>{
-        if (el in store) {
-            delete store[el]
-        } else {
-            store[el] = true
-        }
+    let comb = 0
+    nums.forEach(num => {
+        comb ^= num
     })
-    return Object.keys(store)[0]
+     
+    return comb
 };
+
