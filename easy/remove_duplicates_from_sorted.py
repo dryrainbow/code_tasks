@@ -1,8 +1,4 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-
-from operator import le
-
-
 class Solution(object):
     def removeDuplicates(self, nums):
         left = 0
