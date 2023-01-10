@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/
 // I'm not sure about time complexity 
 // It's definately O(n) but than I iterate through 26 elements and do in the worst case 26 - i - 1 iteration every time
-// So, I think it's still O(n)
+// So, I think it's still O(N + K LOG K)
 /**
  * @param {string} s
  * @return {number}
